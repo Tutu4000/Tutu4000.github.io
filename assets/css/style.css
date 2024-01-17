@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+    --nord0: #2E3440;
+    --nord1: #3B4252;
+    --nord2: #434C5E;
+    --nord3: #4C566A;
+    --nord4: #D8DEE9;
+    --nord5: #E5E9F0;
+    --nord6: #ECEFF4;
+    --nord7: #8FBCBB;
+    --nord8: #88C0D0;
+    --nord9: #81A1C1;
+    --nord10: #5E81AC;
+    --nord11: #BF616A;
+    --nord12: #D08770;
+    --nord13: #EBCB8B;
+    --nord14: #A3BE8C;
+    --nord15: #B48EAD;
+    --sidbar-width: 240px;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  background-color: var(--nord0);
+  color: var(--nord4);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--nord6);
+    font-weight: 700;
+}
+
+a {
+    color: var(--nord8);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.text-brand {
+    color: var(--nord14);
+    font-weight: 700;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid var(--nord15);
+}
+
+a:hover {
+    color: var(--nord7);
+}
+
+img {
+    width: 100%;
+}
+
+.navbar{
+    background-color: var(--nord3);
+}
+
+.navbar .nav-link {
+    color: var(--nord5);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 992px){
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background:  linear-gradient(rgb(67, 76, 94,0.9), rgba(65, 89, 119, 0.9)), url(../images/EZ-NGydX0AUFqVR.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .navbar-brand img{
+        border: 8px solid var(--nord4);
+    }
+
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+    }
+}
+
+.btn {
+    background-color: var(--nord3);
+    color: var(--nord4);
+    border: 2px solid var(--nord4);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--nord4);
+    color: var(--nord3);
+}
+
+.btn-brand {
+    background-color: var(--nord15);
+    color: var(--nord0);
+    border: 2px solid var(--nord15);
+}
+
+.btn-brand:hover {
+    background-color: var(--nord0);
+    color: var(--nord15);
+}
+
+.custom-link{
+    color: var(--nord4);
+    position: relative;
+    font-weight: 700;
+}
+
+.custom-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--nord4);
+    position: absolute;
+    left: 0;
+    top : 110%;
+    transition: all 0.3s;
+}
+
+.custom-link:hover::after {
+    width: 100%;
+}
