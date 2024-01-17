@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: var(--nord8);
+    color: var(--nord15);
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
@@ -136,4 +136,9 @@ img {
 
 .custom-link:hover::after {
     width: 100%;
+}
+
+#about {
+    background: linear-gradient(to right, var(--nord0), var(--nord1));
+    color: var(--nord4);
 }
